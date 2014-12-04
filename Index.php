@@ -48,5 +48,8 @@ switch ($uri[0]) {
 	case "/Inventario_RosyWar/Index.php/buscar_en_inventario":
 		buscar_en_inventario_action("");
 	break;
+	case "/Inventario_RosyWar/Index.php/ingreso_busqueda_en_inventario":
+		ingreso_busqueda_en_inventario_action("");
+	break;
 	}
 ?>
