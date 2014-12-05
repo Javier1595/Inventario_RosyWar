@@ -43,7 +43,7 @@
 	}
 	function restar_inventario_action($string){
 		$inventario=listarinventario();
-		require "plantillas/restar_inventario.php";
+		require "plantillas/menu/busqueda3.php";
 	}
 	function ingreso_inventario_action(){
 		if($_SERVER['REQUEST_METHOD']=="POST"){
@@ -78,5 +78,14 @@
 		}
 	$inventario=buscar_inventario($ColorFaja, $TallaFaja);
 	require "plantillas/menu/busqueda2.php";
+	}
+	function resto_busqueda_en_inventario_action($string){
+		$faja=array();
+		if($_SERVER['REQUEST_METHOD']=="POST"){
+			$ColorFaja=$_POST['ColorFaja'];
+			$TallaFaja=$_POST['TallaFaja'];
+		}
+	$inventario=buscar_inventario($ColorFaja, $TallaFaja);
+	require "plantillas/menu/busqueda3.php";
 	}
 ?>

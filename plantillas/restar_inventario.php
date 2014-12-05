@@ -20,6 +20,9 @@
 			<center><h4><?php echo "".$string;?></h4></center>
 		<?php endif ?>
 		<div class="panel panel-primary">
+			<?php echo $menulist;?>
+		</div>
+		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h1 class="panel-title"><b><center>Restar ventas</center></b></h1>
 			</div>
